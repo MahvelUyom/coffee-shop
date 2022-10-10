@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+
+*{
+  font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html{
+    font-size: 70.5%;
+    overflow-x: hidden;
+}
+
+header{
+    position: fixed;
+    top:0; left:0;
+    width:100%;
+    background:#fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    padding:1rem 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+.nav{
+  font-size: 20px;
+  display: flex;
+}
+.nav h3 span{
+  color:#8b6c5c;
+}
+
+label{
+  margin-left: 150px;
+ }
+.sidenav {
+  
+  height: 100%; 
+  width: 0; 
+  position: fixed; 
+  z-index: 1; 
+  top: 0; 
+  left: 0;
+  opacity:70%;
+  background-color: #111; 
+  overflow-x: hidden; 
+  padding-top: 60px; 
+  transition: 0.5s; 
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color:/* #818181*/ darkgreen;
+  display: block;
+  transition: 0.3s;
+}
+
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+
+
+
+
+
+ .image img{
+    width:40vw;
+    animation: float 3s linear infinite;
+}
+
+@keyframes float{
+    0%, 100%{
+        transform: translateY(0rem);
+    }
+    50%{
+        transform: translateY(-2.0rem);
+    }
+}
+
+.image img{
+  margin-top: 40px;
+  
+}
+
+.morning{
+  display:flex;
+  margin-top: 80px;
+  
+ /* background:black;*/
+}
+.morning p{
+  font-size: 15px;
+  color: black;
+  
+  padding:10px;
+}
+.categories h3, .categories h4{
+  text-align: center;
+}
+.categories h3{
+  color:green;
+}
+.morning-drink, .evening-drink{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.morning-drink .cup,.evening-drink .cup{
+    flex:1 1 30rem;
+    background:#fff;
+    border-radius: .5rem;
+    border:.1rem solid rgba(0,0,0,.2);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    margin:1.5rem;
+    padding:3rem 2rem;
+    border-radius: .5rem;
+    text-align: center;
+    transition: .2s linear;
+}
+
+.morning-drink .cup p,.evening-drink .cup p{
+  font-size: 18px;
+  color: green;
+  
+}
+
+.morning-drink .cup img, .evening-drink .cup img{
+    height: 18rem;
+    width:20rem;
+    border-radius:.5rem;
+}
+.evening-drink .cup{
+  
+}
+h3{
+  font-size: 25px;
+}
+h4{
+  margin-top: 30px;
+  background: black;
+  color:white;
+  font-weight: 700;
+  font-size: 20px;
+  padding:10px;
+  letter-spacing: 2px;
+}
+
+button{
+  width:150px;
+  height:50px;
+  border-radius:30px;
+  background:linear-gradient(to right ,#233329,
+#63D471);
+color:white;
+font-weight: 800;
+border: none;
+margin-bottom: 30px;
+}
+
+
+.footer{
+    padding-top: 3rem;
+    background:linear-gradient(#233329,
+#63D471);
+    background-size: cover;
+    background-position: center;
+}
+
+.footer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer .box-container .box{
+    flex:1 1 25rem;
+    margin:1.3rem;
+}
+
+.footer .box-container .box h3{
+    font-size: 2.5rem;
+    padding:1rem 0;
+    color:#fff;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+}
+
+.footer .box-container .box p{
+    font-size: 1.5rem;
+    padding:.5rem 0;
+    color:#eee;
+}
+
+.footer .box-container .box a{
+    display: block;
+    font-size: 1.5rem;
+    padding:.5rem 0;
+    color:#eee;
+}
+
+.footer .box-container .box a:hover{
+    text-decoration: underline;
+}
+
+.footer .box-container .box .info{
+    display: flex;
+    align-items: center;
+}
+
+.footer .box-container .box .info i{
+    margin:.5rem 0;
+    margin-right: 1rem;
+    border-radius: 50%;
+    background:#fff;
+    color:var(--pink);
+    font-size: 1.5rem;
+    height:4.5rem;
+    width:4.5rem;
+    line-height: 4.5rem;
+    text-align: center;
+}
+
+.footer .credit{
+    font-size: 2rem;
+    font-weight: normal;
+    letter-spacing: .1rem;
+    color:#fff;
+    border-top: .1rem solid #fff5;
+    padding:2.5rem 1rem;
+    text-align: center;
+}
